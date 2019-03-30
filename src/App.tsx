@@ -24,15 +24,18 @@ export default class App extends React.Component<AppProps, AppState> {
 
   render() {
     const { board } = this.state
-    console.log(board)
+
+    console.log(board.state)
 
     return (
       <BoardComponent>
-        <Row>
-          {board.getRow(1).map(box => (
-            <Piece key={box.col} name={box.piece} />
-          ))}
-        </Row>
+        {board.state.map(row => (
+          <Row>
+            {row.map(piece => (
+              <Piece key={piece} name={piece} />
+            ))}
+          </Row>
+        ))}
       </BoardComponent>
     )
   }
