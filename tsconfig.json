@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "es5",
+    "module": "commonjs",
+    "declaration": false,
+    "sourceMap": true,
+    "removeComments": true,
+    "noLib": false,
+    "skipLibCheck": true,
+    "jsx": "react",
+    "types": ["node", "jest"],
+    "lib": ["dom", "es2015", "es2016", "es2017", "esnext.asynciterable"],
+    "keyofStringsOnly": true,
+
+    /* Strict Type-Checking Options */
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    // "alwaysStrict": true,
+
+    /* Additional Checks */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Experimental Options */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    "allowSyntheticDefaultImports": true,
+
+    /* Module Resolution Options */
+    "baseUrl": "./",
+    "outDir": "dist",
+    "paths": {
+      "@nupp1/fit/*": ["./packages/nupp1-fit/src/*"],
+      "@nupp1/gym/*": ["./packages/nupp1-gym/src/*"],
+      "@nupp1/shared/*": ["./packages/nupp1-shared/src/*"]
+    }
+  }
+}
